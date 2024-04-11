@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+        <title>Timer</title>
+    </head>
+    <body>
+        <section class="main-container">
+            <div class="inputs">
+                <input id="day" size="1"></input>
+                <h1 class="s1"> : </h1>
+                <input id="hour" size="1"></input>
+                <h1 class="s2"> : </h1>
+                <input id="minute" size="1"></input>
+                <h1 class="s3"> : </h1>
+                <input id="second" size="1"></input>
+            </div>
+
+            <div class="timer">
+                
+            </div>
+
+            <div class="components">
+                <h1 style="margin-right: 1.5rem;">Days</h1>
+                <h1>Hours</h1>
+                <h1>Minutes</h1>
+                <h1 style="margin-right: 1rem;">Seconds</h1>
+            </div>
+
+            <div class="buttons">
+
+                <div class="control-buttons">
+                    <button class="stop-button" onclick="stopTimer()">Stop</button>
+                    <button class="start-button" onclick="startTimer()">Start</button>
+                    <button class="set-button" onclick="setTimer()">Set</button>
+                    <button class="reset-button" onclick="reset()">Reset</button>
+                </div>
+
+                <div class="change-value">
+
+                    <div class="change-day-value">
+                        <button class="decrease-day" onclick="decDay()"><i class="fa-solid fa-minus"></i></button>
+                        <p>Days</p>
+                        <button class="increase-day" onclick="incDay()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                    <div class="change-hour-value">
+                        <button class="decrease-hour" onclick="decHour()"><i class="fa-solid fa-minus"></i></button>
+                        <p>Hours</p>
+                        <button class="increase-hour" onclick="incHour()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                    <div class="change-minute-value">
+                        <button class="decrease-minute" onclick="decMinute()"><i class="fa-solid fa-minus"></i></button>
+                        <p>Minutes</p>
+                        <button class="increase-minute" onclick="incMinute()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    
+                    <div class="change-second-value">
+                        <button class="decrease-second" onclick="decSecond()"><i class="fa-solid fa-minus"></i></button>
+                        <p>Seconds</p>
+                        <button class="increase-second" onclick="incSecond()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <script src="script.js"></script>
+            <script src="https://kit.fontawesome.com/2fa914bebf.js" crossorigin="anonymous"></script>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 74, 74);
+}
+
+input {
+    font-family: 'Qahiri', sans-serif;
+    font-size: 5rem;
+    padding: 3rem;
+    text-align: center;
+    margin-top: -5rem;
+    background-color: rgb(200, 0, 255);
+}
+
+input:hover {
+    background-color: rgb(135, 1, 172);
+}
+
+input:focus {
+    background-color: black;
+    color: rgb(200, 0, 255);
+    border-width: 1rem;
+}
+
+.s1, .s2, .s3 {
+    font-size: 5rem;
+    color: white;
+    margin-top: -2rem;
+}
+
+.control-buttons, .components, .inputs, .timer, .change-value {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-72%, -250%);
+    position: absolute;
+    gap: 17.7rem;
+    visibility: hidden;
+}
+
+.timer {
+    transform: translate(-70%, -50%);
+    font-size: 8rem;
+    color: white;
+    gap: 4rem;
+    font-family: myFont;
+}
+
+.inputs {
+    transform: translate(-70%, -50%);
+    gap: 3rem;
+    visibility: visible;
+}
+
+.components {
+    color: white;
+    transform: translate(-71.5%, 250%);
+    font-size: 1.1rem;
+    gap: 15.3rem;
+    font-family: 'Signika Negative', sans-serif;
+    visibility: visible;
+    margin-left: 0.5rem;
+}
+
+.control-buttons {
+    flex-direction: column;
+    transform: translate(370%, -55%);
+    gap: 4rem;
+    visibility: visible;
+}
+
+.decrease-buttons {
+    transform: translate(-72%, 120%);
+}
+
+button {
+    padding: 2rem;
+    border: 0.6rem black solid;
+    border-radius: 101rem;
+    border-style: double;
+    cursor: pointer;
+    /* background-color: black; */
+}
+
+.set-button {
+    padding: 3.2rem;
+    font-size: 1.5rem;
+    background-color: lime;
+}
+
+.set-button:hover {
+    background-color: rgb(0, 205, 0);
+}
+
+.stop-button {
+    font-size: 1.5rem;
+    padding: 3.2rem 2.5rem;
+    background-color: red;
+    margin-bottom: -13.3rem;
+    visibility: hidden;
+}
+
+.stop-button:hover {
+    background-color: rgb(205, 0, 0);
+}
+
+.start-button {
+    background-color: aqua;
+    font-size: 1.5rem;
+    padding: 3.2rem 2.4rem;
+    visibility: hidden;
+}
+
+.start-button:hover {
+    background-color: rgb(0, 205, 205);
+}
+
+.reset-button {
+    background-color: yellow;
+    font-size: 1.5rem;
+    padding: 3.2rem 2rem;
+    visibility: hidden;
+}
+
+.reset-button:hover {
+    background-color: rgb(205, 205, 0);
+}
+
+.change-value {
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: 'Signika Negative', sans-serif;
+    gap: 1rem;
+    color: white;
+    transform: translate(230%, -65%);
+    visibility: hidden;
+    align-items: center;
+}
+
+.increase-day,.increase-hour, .increase-minute, .increase-second, .decrease-day, .decrease-hour, .decrease-minute, .decrease-second {
+    border: none;
+    padding: 0rem;
+    font-size: 2rem;
+    border-radius: 0rem;
+    background-color: transparent;
+    color: white;
+}
+    
+.increase-day:hover,.increase-hour:hover, .increase-minute:hover, .increase-second:hover, .decrease-day:hover, .decrease-hour:hover, .decrease-minute:hover, .decrease-second:hover {
+    color: rgb(205, 205, 205);
+}
+
+.change-day-value, .change-hour-value, .change-minute-value, .change-second-value {
+    display: flex;
+    gap: 2rem;
+}
+
+.change-minute-value {
+    gap: 2.05rem;
+}
+
+.change-hour-value {
+    gap: 3rem;
+}
+
+.change-day-value {
+    gap: 3.5rem;
+}
+
+@media only screen and (max-width: 720px) and (min-width: 430px) {
+    .timer{
+        font-size: 3rem;
+        transform: translate(-50%, -200%);
+        gap: 0.5rem;
+    }
+
+    .inputs {
+        gap: 1rem;
+        transform: translate(-50%, -2000%);
+    }
+
+    input {
+        font-size: 4rem;
+        padding: 0;
+    }
+    
+    input:focus {
+        border-width: 0.5rem;
+        border-color: black;
+    }
+
+    .components {
+        transform: translate(-50%, -100%);
+        gap: 4rem;
+        margin-left: 1.2rem;
+    }
+
+    .control-buttons {
+        flex-direction: row;
+        transform: translate(-50%, 100%);
+        gap: 6rem;
+    }
+
+    .set-button, .stop-button, .start-button, .reset-button {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .set-button {
+        padding: 1.2rem 1.1rem;
+        visibility: visible;
+    }
+
+    .reset-button {
+        padding: 1.3rem 0.3rem;
+    }
+
+    .start-button {
+        padding: 1.2rem 0.7rem;
+        margin-left: -2rem;
+    }
+    
+    .stop-button {
+        padding: 1.2rem 0.7rem;
+        margin-right: -9.7rem;
+    }
+
+    .s1, .s2, .s3 {
+        margin-top: -5.5rem;
+    }
+
+    .change-value {
+        transform: translate(-50%, 20%);
+        font-size: 1.5rem;
+    }
+
+    .change-hour-value {
+        gap: 2.77rem;
+    }
+    
+    .change-day-value {
+        gap: 3.15rem;
+    }
+
+    .seperator > h1 {
+        margin-top: -3rem;
+    }
+}
+
+@media only screen and (max-width: 539px) and (min-width: 430px) {
+    /* .timer{
+        font-size: 3rem;
+        transform: translate(-50%, -200%);
+        gap: 0.5rem;
+    } */
+
+    .inputs {
+        gap: 1rem;
+        transform: translate(-48%, -2000%);
+    }
+
+    input {
+        font-size: 3rem;
+        padding: 0;
+    }
+    
+    input:focus {
+        border-width: 0.5rem;
+        border-color: black;
+    }
+
+    .components {
+        transform: translate(-50%, -100%);
+        gap: 2rem;
+        margin-left: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .timer{
+        flex-direction: column;
+        font-size: 2rem;
+        transform: translate(-50%, -70%);
+        gap: 0rem;
+        /* rotate: 90deg; */
+    }
+
+    .inputs {
+        gap: 4rem;
+        /* margin-top: -5rem; */
+        /* margin-left: -4rem; */
+        /* rotate: 90deg; */
+        /* transform: translate(-10%, 6000%); */
+        transform: translate(-80%, -65%);
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 4rem;
+        padding: 0;
+    }
+    
+    input:focus {
+        border-width: 0.5rem;
+        border-color: black;
+    }
+
+    .s1, .s2, .s3 {
+        margin-left: 1.5rem;
+        padding: 0.5rem;
+        margin-top: -6rem;
+    }
+
+    .components {
+        /* rotate: 90deg; */
+        /* transform: translate(-50%, 1000%); */
+        transform: translate(30%, -70%);
+        flex-direction: column;
+        gap: 7rem;
+        font-size: 0.7rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .control-buttons {
+        flex-direction: row;
+        transform: translate(-50%, 250%);
+        font-size: 1rem;
+        gap: 0rem;
+        /* margin-left: -1rem; */
+    }
+
+    .set-button, .stop-button, .start-button, .reset-button {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .set-button {
+        padding: 1.2rem 1.1rem;
+        visibility: visible;
+    }
+
+    .reset-button {
+        padding: 1.3rem 0.3rem;
+    }
+
+    .start-button {
+        padding: 1.2rem 0.7rem;
+        margin-left: 0rem;
+    }
+    
+    .stop-button {
+        padding: 1.2rem 0.7rem;
+        margin-right: -5.7rem;
+    }
+
+    .change-value {
+        transform: translate(-50%, 20%);
+        font-size: 1.5rem;
+        visibility: hidden;
+        display: none;
+    }
+
+    .change-hour-value {
+        gap: 2.77rem;
+    }
+    
+    .change-day-value {
+        gap: 3.15rem;
+    }
+
+    .seperator > h1 {
+        margin-top: -3rem;
+    }
+}
